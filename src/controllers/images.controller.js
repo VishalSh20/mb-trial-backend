@@ -1,6 +1,6 @@
 import {ListObjectsV2Command, GetObjectCommand } from "@aws-sdk/client-s3";
 import {getSignedUrl} from "@aws-sdk/s3-request-presigner";
-import { s3Client } from "../index.js";
+import { s3Client } from "../app.js";
 
 export async function getImages(req,res){
     try{
