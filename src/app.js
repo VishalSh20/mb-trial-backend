@@ -18,6 +18,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
+app.get("/",(req,res)=>{res.send("Welcome to media-buddy!")})
 app.get("/api/upload",getMediaUploadURL);
 app.get("/api/images",getImages);
 app.get("/api/videos",getVideos);
